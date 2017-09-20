@@ -1,0 +1,47 @@
+[wpv-layout-start]
+[wpv-items-found]
+<!-- wpv-loop-start -->
+<table>
+    <thead>
+        <tr>
+            <th> Room Location </th>
+            <th> Type </th>
+            <th> Description </th>
+            <th> Max Capacity </th>
+            <th> Presentation Equipment </th>
+        </tr>
+    </thead>
+    <tbody>
+    <wpv-loop>
+        <tr>
+            <td> <a href="[wpv-post-url]">[types field='room-location'][/types]</a> </td>
+            <td>[types field='room-type'][/types]</td>
+            <td>
+                <ul>
+                    <li>
+                        [types field='room-presentation-equipment' separator='</li><li>'][/types]
+                    </li>
+              </ul>
+            </td>
+          <td> 
+            [types field='room-max-capacity' format='FIELD_NAME: FIELD_VALUE'][/types]
+          </td>
+          <td>
+            <ul>
+              <li>
+                [types field='room-presentation-equipment' separator='</li><li>'][/types]
+              
+
+              </li>
+            </ul>           
+          </td>
+        </tr>
+    </wpv-loop>
+</tbody>
+</table>
+<!-- wpv-loop-end -->
+[/wpv-items-found]
+[wpv-no-items-found]
+<strong>[wpml-string context="wpv-views"]No items found[/wpml-string]</strong>
+[/wpv-no-items-found]
+[wpv-layout-end]
