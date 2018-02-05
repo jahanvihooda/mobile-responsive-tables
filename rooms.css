@@ -1,6 +1,5 @@
 /* VIEW, mobile responsive */
 
-
 @media screen and (max-width:916px) {  
     table, thead, tbody, th, td, tr { 
         display: block; 
@@ -70,7 +69,6 @@
 
 
 /* CONTENT TEMPLATE */
-
 
 .room-img {
     display: inline-block;
@@ -166,5 +164,3 @@ th {
         font-weight: bold;
     }
 }
-
-
